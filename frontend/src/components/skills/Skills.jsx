@@ -1,7 +1,7 @@
 import React, { useRef, useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import bgSkills from "../../assets/bgskills.png";
+import bgSkills from "../../assets/bgskills.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
