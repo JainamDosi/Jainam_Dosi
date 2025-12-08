@@ -103,6 +103,9 @@ export default function Skills() {
         src={bgSkills}
         alt="skills background"
         className="absolute inset-0 w-full h-full object-cover opacity-80"
+        loading="lazy"
+        fetchPriority="low"
+        decoding="async"
       />
 
       {/* Dark Overlay */}

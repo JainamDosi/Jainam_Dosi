@@ -259,6 +259,8 @@ export default function AboutHorizontal() {
             src={meImage}
             alt="About me"
             className="w-40 sm:w-56 md:w-64 lg:w-72 h-auto"
+            loading="lazy"
+            decoding="async"
             style={{ opacity: 0 }}
           />
         </div>

@@ -59,6 +59,8 @@ export default function Hero() {
       <img
         src={bg}
         alt="hero background"
+        loading="lazy"
+        decoding="async"
         className="absolute inset-0 w-full h-full object-cover opacity-80"
       />
 
