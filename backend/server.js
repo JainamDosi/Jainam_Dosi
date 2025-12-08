@@ -26,7 +26,24 @@ const resend = new Resend(RESEND_API_KEY || "missing_key");
 // -----------------------------------------------------
 // GLOBAL MIDDLEWARES
 // -----------------------------------------------------
-app.use(cors());
+const allowedOrigins = [
+  "https://jainam-dosi.vercel.app",
+  "http://localhost:5173",
+  "http://localhost:3000",
+];
+
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+      return callback(new Error("CORS not allowed"), false);
+    },
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 // Security headers
 app.use(helmet());

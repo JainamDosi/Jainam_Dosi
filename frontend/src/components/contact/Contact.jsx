@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const initialForm = { name: "", email: "", message: "" };
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://jainam-dosi.onrender.com";
 
 export default function Contact() {
   const [formData, setFormData] = useState(initialForm);
@@ -25,7 +25,7 @@ export default function Contact() {
     setStatus({ type: "idle", message: "" });
 
     try {
-      const response = await fetch(`http://localhost:4000/api/contact`, {
+      const response = await fetch(`https://jainam-dosi.onrender.com/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
