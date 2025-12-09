@@ -357,7 +357,7 @@ export default function AboutHorizontal() {
               rel="noopener noreferrer"
               className="
                 flex items-center gap-3
-                px-6 py-3 bg-white/10 hover:bg-white/20
+                px-6 py-5 bg-white/10 hover:bg-white/20
                 backdrop-blur-md border border-white/20
                 rounded-lg transition-all duration-300
                 hover:scale-105 hover:border-white/40

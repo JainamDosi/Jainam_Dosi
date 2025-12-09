@@ -5,8 +5,7 @@ import gsap from "gsap";
 const messages = [
   "Hey there,How are you ?",
   "Jainam this side.",
-  "Welcome to my portfolio.",
-  "Hope you like it.",
+  "Welcome to my portfolio."
 ];
 
 export default function TypingSequence() {

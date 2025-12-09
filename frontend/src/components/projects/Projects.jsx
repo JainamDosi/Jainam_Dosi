@@ -14,8 +14,8 @@ export default function Projects() {
       title: "Agent Code",
       description: "AI powered IDE built using LangGraph and gemini APIs",
       size: "large", // 2x2
-      github: "#",   // TODO: add your GitHub link
-      live: "#",     // TODO: add your live demo link
+      github: "https://github.com/JainamDosi/AgentCode?tab=readme-ov-file",   // TODO: add your GitHub link
+      live: "https://drive.google.com/drive/folders/1bqPaS2Cie13lI22dzSma5gW-o7jmXS8H",     // TODO: add your live demo link
     },
     {
       id: 2,
@@ -31,24 +31,24 @@ export default function Projects() {
       title: "Meesho Hackathon Finals",
       description: "National Finalist among 4k+ candidates",
       size: "medium", // 1x2
-      github: "#",
-      live: "#",
+      github: "https://github.com/JainamDosi/MeeshoDICE_Finals_Prototype",
+     
     },
     {
       id: 4,
       title: "Personal Portfolio",
       description: "This website",
       size: "small", // 1x1
-      github: "#",
-      live: "#",
+      github: "https://github.com/JainamDosi/Jainam_Dosi",
+      live: "https://jainam-dosi.vercel.app/",
     },
     {
       id: 5,
       title: "Internship Project",
       description: "Professional work",
       size: "small", // 1x1
-      github: "#",
-      live: "#",
+      github: "https://github.com/JainamDosi/ITZTHERE",
+      live: "https://www.itzthere.com/windo",
     },
     {
       id: 6,
@@ -56,8 +56,8 @@ export default function Projects() {
       description:
         "Represents IIT Bombay at International Sustainability competitions",
       size: "wide", // 2x1
-      github: "#",
-      live: "#",
+      github: "https://github.com/JainamDosi/CHEMECA_IITB",
+      live: "https://chemecaiitb.github.io/ChemEca/",
     },
   ];
 
