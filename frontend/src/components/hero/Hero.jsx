@@ -103,9 +103,9 @@ export default function Hero() {
         <div className="
           relative
           w-full
-          max-w-xs sm:max-w-md md:max-w-xl lg:max-w-3xl xl:max-w-4xl
+          max-w-[92%] sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl
           p-4 sm:p-6 md:p-8 lg:p-10
-          translate-x-[50%] sm:translate-x-[50%] md:translate-x-[55%]
+          translate-x-0 sm:translate-x-[15%] md:translate-x-[35%] lg:translate-x-[45%]
         ">
           <pre className="
             font-mono font-extrabold 
@@ -132,8 +132,8 @@ export default function Hero() {
         ref={cardRef}
         className="
           glass relative z-10
-          w-[45%]
-          max-w-[50%] sm:max-w-[50%] md:max-w-[50%] lg:max-w-3xl xl:max-w-4xl
+          w-full sm:w-11/12 md:w-5/6 lg:w-2/3 xl:w-[60%]
+          max-w-5xl
           p-4 sm:p-6 md:p-8 lg:p-10
           rounded-xl sm:rounded-2xl lg:rounded-3xl
           text-white
