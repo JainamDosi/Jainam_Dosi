@@ -218,7 +218,7 @@ export default function AboutHorizontal() {
             </div>
           ))}
         </div>
-        <div className="absolute top-1/2 left-0 w-full p-4 sm:p-6 md:p-8 space-y-1 sm:space-y-2">
+        <div className="absolute top-1/2 left-28 w-full p-10 sm:p-6 md:p-8 space-y-1 sm:space-y-2">
           {codeSnippets.map((line, index) => (
             <div
               key={`second-${index}`}
@@ -270,18 +270,34 @@ export default function AboutHorizontal() {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 md:mb-10">
             ABOUT ME
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8">
-            I am Jainam Dosi from IIT Bombay, a driven{" "}
-            <span className="missing-word" style={{ color: "#000" }}>
-              developer
-            </span>{" "}
-            passionate about building clean, scalable systems. My work spans{" "}
-            <span className="missing-word" style={{ color: "#000" }}>ML</span>{" "}
-            and{" "}
-            <span className="missing-word" style={{ color: "#000" }}>AI</span>{" "}
-            with a growing focus on GenAI, where I enjoy turning complex ideas
-            into reliable, real-world solutions.
-          </p>
+<p className="text-lg sm:text-xl md:text-2xl leading-relaxed mb-8">
+  Hi, I’m Jainam Dosi, a final-year IIT Bombay student passionate about exploring the intersection of{" "}
+  <span className="missing-word" style={{ color: "#000" }}>
+    software development
+  </span>{" "}
+  and{" "}
+  <span className="missing-word" style={{ color: "#000" }}>
+    AI
+  </span>
+  . I love turning ideas into working systems, experimenting with{" "}
+  <span className="missing-word" style={{ color: "#000" }}>
+    deep learning
+  </span>{" "}
+  and{" "}
+  <span className="missing-word" style={{ color: "#000" }}>
+    generative AI
+  </span>
+  , and learning by building projects. I enjoy diving into new technologies, exploring{" "}
+  <span className="missing-word" style={{ color: "#000" }}>
+    AI tools
+  </span>
+  , and playing{" "}
+  <span className="missing-word" style={{ color: "#000" }}>
+    table tennis 🏓
+  </span>
+  
+</p>
+
 
           {/* Social Buttons */}
           <div
