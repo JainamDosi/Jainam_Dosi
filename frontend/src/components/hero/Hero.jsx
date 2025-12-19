@@ -134,7 +134,7 @@ export default function Hero() {
           glass relative z-10
           w-full sm:w-11/12 md:w-5/6 lg:w-2/3 xl:w-[60%]
           max-w-5xl
-          p-4 sm:p-6 md:p-8 lg:p-10
+          p-4 sm:p-6 md:p-7 lg:p-10
           rounded-xl sm:rounded-2xl lg:rounded-3xl
           text-white
           shadow-xl
