@@ -69,7 +69,8 @@ export default function Projects() {
       description: "A repository to share placement resource",
       size: "small", // 1x1
       github: "https://github.com/JainamDosi/PlaceVault",
-      status: "Building",
+      live: "https://placevault.vercel.app/",
+      status: "Shipped",
     },
   ];
 
@@ -214,7 +215,9 @@ export default function Projects() {
                             inline-block w-2 h-2 rounded-full mr-2 
                             ${project.status === 'Building'
                               ? 'bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)] animate-pulse'
-                              : 'bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.8)]'}
+                              : project.status === 'Shipped'
+                                ? 'bg-yellow-400 shadow-[0_0_10px_rgba(250,204,21,0.8)]'
+                                : 'bg-green-400 shadow-[0_0_10px_rgba(74,222,128,0.8)]'}
                           `}
                         ></span>
                         {project.status}
