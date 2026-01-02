@@ -70,7 +70,16 @@ export default function Projects() {
       size: "small", // 1x1
       github: "https://github.com/JainamDosi/PlaceVault",
       live: "https://placevault.vercel.app/",
-      status: "Shipped",
+      status: "Completed",
+    },
+    {
+      id: 8,
+      title: "Immersive Scroll",
+      description: "Mini project with smooth immersive storytelling experience",
+      size: "wide", // 2x1
+      github: "https://github.com/JainamDosi/ImmersiveScroll",
+      live: "https://immersive-scroll.vercel.app/",
+      status: "Completed",
     },
   ];
 
