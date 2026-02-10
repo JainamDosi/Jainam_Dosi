@@ -15,16 +15,7 @@ const About = () => {
                 </div>
                 <div className="md:col-span-7 text-retro-dark">
                     <div className="space-y-6 text-retro-dark">
-                        <div className="flex justify-between items-center mb-6">
-                            <h2 className="font-retro text-2xl md:text-3xl text-burnt-orange leading-none uppercase">The_Designer_Profile</h2>
-                            <div className="p-1 bg-mustard/10 border-2 border-retro-dark/20 rounded-sm">
-                                <img
-                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/80px-Indian_Institute_of_Technology_Bombay_Logo.svg.png"
-                                    alt="IIT Bombay Logo"
-                                    className="w-10 h-10 pixel-mask"
-                                />
-                            </div>
-                        </div>
+                        <h2 className="font-retro text-2xl md:text-3xl text-burnt-orange leading-none uppercase">The_Designer_Profile</h2>
                         <p className="text-lg md:text-xl font-semibold leading-relaxed font-body">
                             I bridge the gap between <span className="bg-mustard/30 px-2 border-2 border-retro-dark/20 italic">creative design</span> and technical engineering.
                         </p>

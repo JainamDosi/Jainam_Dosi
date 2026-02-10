@@ -12,14 +12,7 @@ const About = () => {
                 />
             </div>
             <div className="col-span-12 lg:col-span-8 p-6 md:p-10 flex flex-col justify-center">
-                <div className="flex justify-between items-start mb-4">
-                    <span className="text-accent-orange text-[9px] font-bold tracking-[0.4em] uppercase">// ARCHITECT_MANIFESTO</span>
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/100px-Indian_Institute_of_Technology_Bombay_Logo.svg.png"
-                        alt="IIT Bombay Logo"
-                        className="w-8 h-8 opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
-                    />
-                </div>
+                <span className="text-accent-orange text-[9px] font-bold tracking-[0.4em] mb-4 uppercase">// ARCHITECT_MANIFESTO</span>
                 <h2 className="text-2xl md:text-3xl text-white font-light tracking-tight mb-6 leading-tight uppercase">
                     EFFICIENCY IS<br /><span className="font-bold">THE ULTIMATE SOPHISTICATION</span>
                 </h2>
