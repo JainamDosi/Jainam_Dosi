@@ -15,12 +15,21 @@ const About = () => {
                 </div>
                 <div className="md:col-span-7 text-retro-dark">
                     <div className="space-y-6 text-retro-dark">
-                        <h2 className="font-retro text-2xl md:text-3xl text-burnt-orange leading-none uppercase">The_Designer_Profile</h2>
+                        <div className="flex justify-between items-center mb-6">
+                            <h2 className="font-retro text-2xl md:text-3xl text-burnt-orange leading-none uppercase">The_Designer_Profile</h2>
+                            <div className="p-1 bg-mustard/10 border-2 border-retro-dark/20 rounded-sm">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/80px-Indian_Institute_of_Technology_Bombay_Logo.svg.png"
+                                    alt="IIT Bombay Logo"
+                                    className="w-10 h-10 pixel-mask"
+                                />
+                            </div>
+                        </div>
                         <p className="text-lg md:text-xl font-semibold leading-relaxed font-body">
-                            I build digital worlds where <span className="bg-mustard/30 px-2 border-2 border-retro-dark/20 italic">nostalgia</span> meets high-performance engineering.
+                            I bridge the gap between <span className="bg-mustard/30 px-2 border-2 border-retro-dark/20 italic">creative design</span> and technical engineering.
                         </p>
                         <p className="text-base opacity-70 leading-relaxed font-body">
-                            Based in a retro-fitted laboratory, I spend my days bridging the gap between tactile 80s aesthetics and modern interaction patterns. Every pixel is intentional, every hover is a handshake.
+                            I build robust software and AI systems that look great and work even better. My goal is to blend modern technology with a focus on high-quality user experiences.
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 font-body">
                             <div className="bg-retro-bg p-4 border-2 border-retro-dark retro-border">
@@ -58,7 +67,7 @@ const About = () => {
                             <div className="sm:col-span-2 bg-retro-bg p-4 border-2 border-retro-dark retro-border">
                                 <h4 className="font-retro text-[10px] mb-3 text-avocado uppercase">Tools_Platforms</h4>
                                 <div className="flex flex-wrap gap-1">
-                                    {["Git", "GitHub", "Postman", "Figma"].map(item => (
+                                    {["Git", "GitHub", "Postman", "Figma", "Cursor", "Antigravity"].map(item => (
                                         <span key={item} className="px-1.5 py-0.5 bg-mustard/20 border border-retro-dark/30 hover:border-avocado transition-colors duration-300 text-[9px] font-bold uppercase cursor-default">{item}</span>
                                     ))}
                                 </div>

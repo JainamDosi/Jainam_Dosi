@@ -50,7 +50,7 @@ const Hero = () => {
                         >
                             GET_RESUME
                         </a>
-                        <p className="font-bold text-lg uppercase tracking-tight">Software • AI • Architect</p>
+                        <p className="font-bold text-lg uppercase tracking-tight">SDE • AI </p>
                     </div>
 
                     <p className="text-base max-w-md leading-relaxed opacity-70">
