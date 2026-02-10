@@ -13,7 +13,7 @@ const Hero = () => {
                         Hello!<br /><span className="text-accent-orange font-bold uppercase">I'M JAINAM DOSI</span>
                     </h1>
                     <p className="text-xs text-beige-muted max-w-sm leading-relaxed">
-                        Engineering high-integrity digital structures. Merging machine intelligence with fluid interaction systems.
+                        Building robust software and AI systems with seamless user experiences.
                     </p>
                 </div>
                 <div className="relative h-32 w-full border border-ui-border bg-instrument-bg/50 overflow-hidden flex items-center justify-center mt-8">
@@ -40,7 +40,7 @@ const Hero = () => {
                     <span className="metric-label">Operational_Status</span>
                     <div className="flex items-center gap-3">
                         <span className="metric-value text-lg md:text-xl text-white uppercase font-bold">OPEN_FOR_COLLAB</span>
-                        <span className="w-2 h-2 rounded-full bg-accent-orange shadow-[0_0_8px_#c25d2e]"></span>
+                        <span className="w-2 h-2 rounded-full bg-green-300 shadow-[0_0_8px_#c25d2e]"></span>
                     </div>
                     <span className="text-[9px] text-beige-muted mt-2 lg:mt-auto uppercase font-bold">AVAILABILITY: YES</span>
                 </div>

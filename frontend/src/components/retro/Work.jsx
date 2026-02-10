@@ -7,7 +7,7 @@ const projects = [
         description: "AI powered IDE built using LangGraph and gemini APIs",
         tag: "AI_IDE",
         link: "https://github.com/JainamDosi/AgentCode",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXNXYE_MWTBofSoy2LE8y4DglnOZj8CX0G7mnTZnEOmBVeo5vHV2V6wLFEjSxSMdMKGS9pvW-YrvwQ3zkXVzs1IMlceC9LapIUTkT3uG2WlIJh4pTOoVvWfqH_aJCwfTdtCNstLHTe4b17GCWNJ74wFDOy00GpFVTyKARcRwEOMRBDoIaEYrYk3Ch7pLW3L1bVG-7TBrSQNL9oOgXDOOwOpn9eFpNiu-TXASNkBFDri7Xn76RNhRPUkBAHaKza91ZRVT7OBJS72Ia6"
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_002",
@@ -15,7 +15,7 @@ const projects = [
         description: "Retrieval Augmented Generation chatbot with memory and context",
         tag: "NLP_RAG",
         link: "https://github.com/JainamDosi/QnA-Chatbot",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCASQpXSGoou9oG7Ep1nvJmKEjPHndpkwIKgcooKGfwlKvuvBNV80ClBPtfR8gJfolmYJi74GVg_mJO5IFMqjePHHce3Z_fhXLLy0ElSuN7un3ygpTpblZUEkzHTJGEghn2F7dLgnBn-jhoAtccrhL1h-WH_y-hfK_DlkXTkWe3x46CNVALLbF5LEdRKmW9QDPvL8aVdO3Tt3QQ-kUSCVQUsCTEBX5oWpNKMTYVn9rO54Sd9SZBazNZNRpaDB2EBE5aSbgOVLLMdUw6"
+        image: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_003",
@@ -23,7 +23,7 @@ const projects = [
         description: "National Finalist among 4k+ candidates. E-commerce optimization.",
         tag: "FINALS",
         link: "https://github.com/JainamDosi/MeeshoDICE_Finals_Prototype",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuClC9STr4xvAq5R-MyiFMI13pAcNpfoVnvRTk4OWcn3-bXZGJhN0mhWaxjhVZPolz-8N-0HR7OcwnkXOmYoogruFHVt6yvvbfU_2dREolXXOKS8ueLb0nGB8qEM3ktKlSvIR43J3jfPYoxn9Nc-uW6CUISYgL4pAYNjmauAWfjs_j3q8nCNomSJn7-ALLUhhuhfcD1_kPaLGVpnZLXLo9V538VIusmCg7VXAG5cNzTTEepvWU9djv3QAywq-tWAGK0_iWhU6C1daTwl"
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_004",
@@ -31,15 +31,15 @@ const projects = [
         description: "Mini project with smooth immersive storytelling experience",
         tag: "UI_UX",
         link: "https://github.com/JainamDosi/ImmersiveScroll",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6mzL0dvAsF-YXOhtOMo-3TVe1gGjRwUzGGUzZ3tZA9ZVqzJIFrmyQL_KjJ2MziVRrEMmcbEe_K8WVNOr_SxT8spclRUGJW9cS9eFgANMRTlt-EWTeIjH7QA8UiB0Ff_KwmvwmuySa_UEiGs6bTA_roTXjvA4VejbwruDVO-dIBThuaxSfI06EMeY53faFQdEiEbb4Ay0N8VnU7rkkqwFerblEZ38Mr18BmWeIivRfVots-y-QzGP5q2wTpchekShX1QGZcfoQt3gt"
+        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_005",
         title: "Personal Portfolio",
         description: "Cyberpunk & Retro dual-mode high-performance portfolio",
         tag: "DESIGN",
-        link: "#",
-        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800"
+        link: "https://github.com/JainamDosi/Jainam_Dosi",
+        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_006",

@@ -21,7 +21,7 @@ const Hero = () => {
                     <div className="absolute w-40 h-40 bg-avocado border-8 border-retro-dark shadow-[10px_10px_0px_#2d2d2d] -rotate-12 translate-x-16 translate-y-16 group-hover:translate-x-24 group-hover:translate-y-24 group-hover:rotate-12 transition-all duration-700 ease-in-out z-20 animate-retro-float"></div>
 
                     {/* Triangle - Sharp Accent */}
-                    <div className="absolute w-0 h-0 border-l-[40px] border-l-transparent border-r-[40px] border-r-transparent border-b-[70px] border-b-retro-bg -translate-x-20 -translate-y-20 rotate-[35deg] group-hover:-rotate-[15deg] group-hover:-translate-x-28 transition-all duration-500 ease-out z-30 drop-shadow-[5px_5px_0px_rgba(45,45,45,1)]"></div>
+                    <div className="absolute w-0 h-0 border-l-40 border-l-transparent border-r-40 border-r-transparent border-b-[70px] border-b-retro-bg -translate-x-20 -translate-y-20 rotate-[35deg] group-hover:-rotate-[15deg] group-hover:-translate-x-28 transition-all duration-500 ease-out z-30 drop-shadow-[5px_5px_0px_rgba(45,45,45,1)]"></div>
 
                     {/* Minimalist Accents */}
                     <div className="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-retro-dark"></div>
@@ -54,12 +54,12 @@ const Hero = () => {
                     </div>
 
                     <p className="text-base max-w-md leading-relaxed opacity-70">
-                        Crafting high-integrity digital structures by merging machine intelligence with fluid, human-centric interaction systems.
+                        Building robust software and AI systems with seamless user experiences.
                     </p>
 
                     <div className="mt-8">
                         <a className="inline-block bg-avocado text-retro-bg px-10 py-5 border-4 border-retro-dark font-retro text-xl hover:bg-mustard hover:text-retro-dark transition-all shadow-[6px_6px_0px_0px_rgba(45,45,45,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 active:scale-95" href="#work">
-                            EXPLORE_PROTOCOLS
+                            EXPLORE_PROJECTS
                         </a>
                     </div>
                 </div>

@@ -6,62 +6,62 @@ const projects = [
         title: "Agent Code",
         description: "AI powered IDE built using LangGraph and gemini APIs",
         link: "https://github.com/JainamDosi/AgentCode",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCXNXYE_MWTBofSoy2LE8y4DglnOZj8CX0G7mnTZnEOmBVeo5vHV2V6wLFEjSxSMdMKGS9pvW-YrvwQ3zkXVzs1IMlceC9LapIUTkT3uG2WlIJh4pTOoVvWfqH_aJCwfTdtCNstLHTe4b17GCWNJ74wFDOy00GpFVTyKARcRwEOMRBDoIaEYrYk3Ch7pLW3L1bVG-7TBrSQNL9oOgXDOOwOpn9eFpNiu-TXASNkBFDri7Xn76RNhRPUkBAHaKza91ZRVT7OBJS72Ia6"
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_QNA_CHAT",
         title: "QnA Chatbot",
         description: "Retrieval Augmented Generation chatbot with memory and context",
         link: "https://github.com/JainamDosi/QnA-Chatbot",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCASQpXSGoou9oG7Ep1nvJmKEjPHndpkwIKgcooKGfwlKvuvBNV80ClBPtfR8gJfolmYJi74GVg_mJO5IFMqjePHHce3Z_fhXLLy0ElSuN7un3ygpTpblZUEkzHTJGEghn2F7dLgnBn-jhoAtccrhL1h-WH_y-hfK_DlkXTkWe3x46CNVALLbF5LEdRKmW9QDPvL8aVdO3Tt3QQ-kUSCVQUsCTEBX5oWpNKMTYVn9rO54Sd9SZBazNZNRpaDB2EBE5aSbgOVLLMdUw6"
+        image: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_MEESHO",
         title: "Meesho Hackathon",
         description: "National Finalist among 4k+ candidates. E-commerce optimization.",
         link: "https://github.com/JainamDosi/MeeshoDICE_Finals_Prototype",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuClC9STr4xvAq5R-MyiFMI13pAcNpfoVnvRTk4OWcn3-bXZGJhN0mhWaxjhVZPolz-8N-0HR7OccwnkXOmYoogruFHVt6yvvbfU_2dREolXXOKS8ueLb0nGB8qEM3ktKlSvIR43J3jfPYoxn9Nc-uW6CUISYgL4pAYNjmauAWfjs_j3q8nCNomSJn7-ALLUhhuhfcD1_kPaLGVpnZLXLo9V538VIusmCg7VXAG5cNTTEepvWU9djv3QAywq-tWAGK0_iWhU6C1daTwl"
+        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_IMMERSIVE",
         title: "Immersive Scroll",
         description: "Mini project with smooth immersive storytelling experience",
         link: "https://github.com/JainamDosi/ImmersiveScroll",
-        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6mzL0dvAsF-YXOhtOMo-3TVe1gGjRwUzGGUzZ3tZA9ZVqzJIFrmyQL_KjJ2MziVRrEMmcbEe_K8WVNOr_SxT8spclRUGJW9cS9eFgANMRTlt-EWTeIjH7QA8UiB0Ff_KwmvwmuySa_UEiGs6bTA_roTXjvA4VejbwruDVO-dIBThuaxSfI06EMeY53faFQdEiEbb4Ay0N8VnU7rkkqwFerblEZ38Mr18BmWeIivRfVots-y-QzGP5q2wTpchekShX1QGZcfoQt3gt"
+        image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_PORTFOLIO",
         title: "Personal Portfolio",
         description: "Cyberpunk & Retro dual-mode high-performance portfolio",
-        link: "#",
-        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800"
+        link: "https://github.com/JainamDosi/Jainam_Dosi",
+        image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_EXPMED",
         title: "ExpMed AI",
         description: "AI tool with OCR/TTS for medical report interpretation",
-        link: "#",
+        link: "https://github.com/JainamDosi/ExpMed",
         image: "https://images.unsplash.com/photo-1576091160550-2173dad9998e?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_BUDGET",
         title: "50-30-20 Tool",
         description: "Financial budgeting tool enforcing the 50-30-20 rule",
-        link: "#",
+        link: "https://github.com/JainamDosi/50_30_20tool",
         image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_PLACEVAULT",
         title: "Placevault",
         description: "Placement resource library for sharing and accessing materials",
-        link: "#",
+        link: "https://github.com/JainamDosi/Placevault",
         image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_ITZTHERE",
         title: "Itzthere",
-        description: "Professional doc sharing platform with RBAC (Internship)",
-        link: "#",
+        description: "Internship Project: Professional doc sharing platform with RBAC",
+        link: "https://github.com/JainamDosi/ITZTHERE",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
     }
 ];
