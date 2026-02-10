@@ -42,7 +42,14 @@ const Hero = () => {
 
                 <div className="flex flex-col gap-6 font-body">
                     <div className="flex items-center gap-4">
-                        <div className="px-3 py-1 bg-mustard border-2 border-retro-dark font-retro text-xs shadow-[3px_3px_0px_#2d2d2d]">BUILDER_01</div>
+                        <a
+                            href="https://drive.google.com/drive/folders/14PiBokSAVfBHBAZyrcUJjDqGozHBlIvs?usp=drive_link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-3 py-1 bg-mustard border-2 border-retro-dark font-retro text-xs shadow-[3px_3px_0px_#2d2d2d] hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none transition-all cursor-pointer"
+                        >
+                            GET_RESUME
+                        </a>
                         <p className="font-bold text-lg uppercase tracking-tight">Software • AI • Architect</p>
                     </div>
 

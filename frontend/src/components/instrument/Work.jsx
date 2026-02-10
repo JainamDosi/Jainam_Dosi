@@ -28,31 +28,102 @@ const projects = [
         description: "Mini project with smooth immersive storytelling experience",
         link: "https://github.com/JainamDosi/ImmersiveScroll",
         image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6mzL0dvAsF-YXOhtOMo-3TVe1gGjRwUzGGUzZ3tZA9ZVqzJIFrmyQL_KjJ2MziVRrEMmcbEe_K8WVNOr_SxT8spclRUGJW9cS9eFgANMRTlt-EWTeIjH7QA8UiB0Ff_KwmvwmuySa_UEiGs6bTA_roTXjvA4VejbwruDVO-dIBThuaxSfI06EMeY53faFQdEiEbb4Ay0N8VnU7rkkqwFerblEZ38Mr18BmWeIivRfVots-y-QzGP5q2wTpchekShX1QGZcfoQt3gt"
+    },
+    {
+        id: "PRJ_PORTFOLIO",
+        title: "Personal Portfolio",
+        description: "Cyberpunk & Retro dual-mode high-performance portfolio",
+        link: "#",
+        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        id: "PRJ_EXPMED",
+        title: "ExpMed AI",
+        description: "AI tool with OCR/TTS for medical report interpretation",
+        link: "#",
+        image: "https://images.unsplash.com/photo-1576091160550-2173dad9998e?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        id: "PRJ_BUDGET",
+        title: "50-30-20 Tool",
+        description: "Financial budgeting tool enforcing the 50-30-20 rule",
+        link: "#",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        id: "PRJ_PLACEVAULT",
+        title: "Placevault",
+        description: "Placement resource library for sharing and accessing materials",
+        link: "#",
+        image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800"
+    },
+    {
+        id: "PRJ_ITZTHERE",
+        title: "Itzthere",
+        description: "Professional doc sharing platform with RBAC (Internship)",
+        link: "#",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
     }
 ];
 
 const Work = () => {
     return (
-        <section className="" id="work">
+        <section className="border-t border-ui-border" id="work">
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center px-6 md:px-8 py-4 border-b border-ui-border bg-charcoal/30 gap-2">
-                <h2 className="text-xs font-bold tracking-[0.3em] uppercase">Library_Index / Projects</h2>
-                <span className="text-[9px] font-data text-beige-muted uppercase">TOTAL_ENTRIES: 004</span>
+                <div className="flex items-center gap-3">
+                    <span className="w-2 h-2 bg-accent-orange animate-pulse"></span>
+                    <h2 className="text-xs font-bold tracking-[0.3em] uppercase">Library_Index / Projects</h2>
+                </div>
+                <span className="text-[9px] font-data text-beige-muted uppercase tracking-widest">
+                    TOTAL_ENTRIES: {projects.length.toString().padStart(3, '0')}
+                </span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, idx) => (
-                    <div key={project.id} className={`group border-ui-border ${idx !== projects.length - 1 ? 'border-b sm:border-b-0 sm:border-r' : ''} ${idx % 2 === 0 ? 'sm:border-r' : 'sm:border-r-0 lg:border-r'}`}>
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="block overflow-hidden">
-                            <div className="aspect-square relative overflow-hidden bg-instrument-bg border-b border-ui-border">
-                                <img alt={project.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 brightness-75 group-hover:scale-105 group-hover:brightness-100 transition-all duration-500" src={project.image} />
-                                <div className="absolute top-2 left-2 px-1.5 py-0.5 bg-instrument-bg/80 text-[8px] font-bold border border-ui-border uppercase">{project.id}</div>
+                    <div key={project.id} className="group border-b border-ui-border md:odd:border-r lg:border-r lg:[&:nth-child(3n)]:border-r-0 flex flex-col bg-panel/20">
+                        {/* Card Header */}
+                        <div className="px-4 py-2 border-b border-ui-border flex justify-between items-center bg-charcoal/40">
+                            <span className="text-[8px] font-mono text-beige-muted">{project.id}</span>
+                            <div className="flex gap-1">
+                                <span className="w-1 h-1 bg-beige-muted/30"></span>
+                                <span className="w-1 h-1 bg-beige-muted/30"></span>
+                                <span className="w-1 h-1 bg-accent-orange"></span>
                             </div>
+                        </div>
+
+                        {/* Image Section */}
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="block relative overflow-hidden aspect-video border-b border-ui-border">
+                            <img
+                                alt={project.title}
+                                className="w-full h-full object-cover grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
+                                src={project.image}
+                            />
+                            <div className="absolute inset-0 bg-accent-orange/10 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
                         </a>
-                        <div className="p-4 bg-charcoal/10 h-full flex flex-col">
-                            <h3 className="text-[11px] font-bold mb-1 uppercase text-white font-mono">{project.title}</h3>
-                            <p className="text-[9px] text-beige-muted uppercase leading-tight font-mono mb-4">{project.description}</p>
-                            <div className="mt-auto flex justify-between items-center pt-2">
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-[8px] font-bold text-accent-orange cursor-pointer hover:underline uppercase">[ VIEW_GTHB ]</a>
-                                <span className="material-symbols-outlined text-[14px] text-beige-muted">arrow_outward</span>
+
+                        {/* Content Section */}
+                        <div className="p-5 flex flex-col flex-grow">
+                            <h3 className="text-xs font-bold mb-2 uppercase text-white font-mono tracking-tight group-hover:text-accent-orange transition-colors">
+                                {project.title}
+                            </h3>
+                            <p className="text-[10px] text-beige-muted uppercase leading-relaxed font-mono mb-6 line-clamp-2">
+                                {project.description}
+                            </p>
+
+                            {/* Action Bar */}
+                            <div className="mt-auto pt-4 border-t border-ui-border/50 flex justify-between items-center">
+                                <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-[9px] font-bold text-accent-orange hover:text-white transition-colors uppercase flex items-center gap-2"
+                                >
+                                    <span className="w-1.5 h-1.5 bg-accent-orange"></span>
+                                    [ VIEW_GTHB_REKORD ]
+                                </a>
+                                <span className="material-symbols-outlined text-[16px] text-beige-muted group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+                                    north_east
+                                </span>
                             </div>
                         </div>
                     </div>
