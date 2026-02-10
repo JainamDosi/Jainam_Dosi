@@ -48,14 +48,18 @@ const Work = () => {
             <div className="flex overflow-x-auto no-scrollbar gap-8 px-6 pb-12 cursor-grab active:cursor-grabbing">
                 {projects.map((project, idx) => (
                     <div key={project.id} className="min-w-[320px] md:min-w-[450px] group">
-                        <div className="relative aspect-[4/3] bg-retro-dark border-4 border-retro-dark overflow-hidden retro-border group-hover:-translate-y-2 transition-transform">
-                            <img alt={project.title} className="w-full h-full object-cover pixel-mask opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all font-body" src={project.image} />
-                            <div className={`absolute bottom-4 left-4 ${idx % 2 === 0 ? 'bg-mustard' : 'bg-burnt-orange'} px-2 py-1 text-[10px] font-retro border-2 border-retro-dark text-retro-dark`}>
-                                {project.tag}
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                            <div className="relative aspect-[4/3] bg-retro-dark border-4 border-retro-dark overflow-hidden retro-border group-hover:-translate-y-2 transition-transform">
+                                <img alt={project.title} className="w-full h-full object-cover pixel-mask grayscale group-hover:grayscale-0 opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 font-body" src={project.image} />
+                                <div className={`absolute bottom-4 left-4 ${idx % 2 === 0 ? 'bg-mustard' : 'bg-burnt-orange'} px-2 py-1 text-[10px] font-retro border-2 border-retro-dark text-retro-dark`}>
+                                    {project.tag}
+                                </div>
                             </div>
-                        </div>
+                        </a>
                         <div className="mt-8 text-retro-dark">
-                            <h3 className="font-retro text-2xl">{project.title}</h3>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-burnt-orange transition-colors">
+                                <h3 className="font-retro text-2xl">{project.title}</h3>
+                            </a>
                             <p className="text-sm font-bold uppercase opacity-60 font-body">{project.description}</p>
                             <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 font-bold text-burnt-orange hover:underline font-body">ACCESS_GTHB_REKORD →</a>
                         </div>

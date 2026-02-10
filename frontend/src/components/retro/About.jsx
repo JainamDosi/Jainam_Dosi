@@ -6,10 +6,10 @@ const About = () => {
         <section className="py-24 px-6 border-y-4 border-retro-dark bg-avocado/10" id="about">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
                 <div className="md:col-span-5">
-                    <div className="relative">
-                        <div className="absolute -inset-4 bg-mustard -rotate-3 border-4 border-retro-dark"></div>
+                    <div className="relative group">
+                        <div className="absolute -inset-4 bg-mustard -rotate-3 border-4 border-retro-dark transition-transform group-hover:rotate-0"></div>
                         <div className="relative aspect-square border-4 border-retro-dark bg-retro-dark overflow-hidden">
-                            <img alt="Portrait" className="w-full h-full object-cover grayscale contrast-150 brightness-110 pixel-mask" src={meImage} />
+                            <img alt="Portrait" className="w-full h-full object-cover grayscale group-hover:grayscale-0 contrast-150 group-hover:contrast-100 brightness-110 transition-all duration-700 pixel-mask" src={meImage} />
                         </div>
                     </div>
                 </div>
@@ -22,24 +22,46 @@ const About = () => {
                         <p className="text-base opacity-70 leading-relaxed font-body">
                             Based in a retro-fitted laboratory, I spend my days bridging the gap between tactile 80s aesthetics and modern interaction patterns. Every pixel is intentional, every hover is a handshake.
                         </p>
-                        <div className="grid grid-cols-2 gap-6 pt-6 font-body">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 font-body">
                             <div className="bg-retro-bg p-4 border-2 border-retro-dark retro-border">
-                                <h4 className="font-retro text-xs mb-3 text-avocado uppercase">Capabilities</h4>
-                                <ul className="text-xs font-bold space-y-1 uppercase tracking-tighter">
-                                    <li>- UI/UX Architecture</li>
-                                    <li>- Interaction Modules</li>
-                                    <li>- AI System Design</li>
-                                    <li>- Frontend Core</li>
-                                </ul>
+                                <h4 className="font-retro text-[10px] mb-3 text-avocado uppercase">Languages</h4>
+                                <div className="flex flex-wrap gap-1">
+                                    {["C++", "Python", "JS", "TS"].map(item => (
+                                        <span key={item} className="px-1.5 py-0.5 bg-mustard/20 border border-retro-dark/30 hover:border-avocado transition-colors duration-300 text-[9px] font-bold uppercase cursor-default">{item}</span>
+                                    ))}
+                                </div>
                             </div>
                             <div className="bg-retro-bg p-4 border-2 border-retro-dark retro-border">
-                                <h4 className="font-retro text-xs mb-3 text-burnt-orange uppercase">Tech_Stack</h4>
-                                <ul className="text-xs font-bold space-y-1 uppercase tracking-tighter">
-                                    <li>- REACT.JS</li>
-                                    <li>- NODE.RUN</li>
-                                    <li>- PYTHON.ML</li>
-                                    <li>- TAILWIND.CSS</li>
-                                </ul>
+                                <h4 className="font-retro text-[10px] mb-3 text-burnt-orange uppercase">Web_Backend</h4>
+                                <div className="flex flex-wrap gap-1">
+                                    {["React", "Next", "Node", "Express", "Mongo", "Firebase", "Supabase"].map(item => (
+                                        <span key={item} className="px-1.5 py-0.5 bg-mustard/20 border border-retro-dark/30 hover:border-burnt-orange transition-colors duration-300 text-[9px] font-bold uppercase cursor-default">{item}</span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="bg-retro-bg p-4 border-2 border-retro-dark retro-border">
+                                <h4 className="font-retro text-[10px] mb-3 text-avocado uppercase">AI_ML_Modules</h4>
+                                <div className="flex flex-wrap gap-1">
+                                    {["LangChain", "LangGraph", "RAG", "LLM", "HuggingFace", "Pinecone", "ChromaDB", "n8n"].map(item => (
+                                        <span key={item} className="px-1.5 py-0.5 bg-mustard/20 border border-retro-dark/30 hover:border-avocado transition-colors duration-300 text-[9px] font-bold uppercase cursor-default">{item}</span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="bg-retro-bg p-4 border-2 border-retro-dark retro-border">
+                                <h4 className="font-retro text-[10px] mb-3 text-burnt-orange uppercase">CS_Fundamentals</h4>
+                                <div className="flex flex-wrap gap-1">
+                                    {["DSA", "OOP", "DBMS", "OS"].map(item => (
+                                        <span key={item} className="px-1.5 py-0.5 bg-mustard/20 border border-retro-dark/30 hover:border-burnt-orange transition-colors duration-300 text-[9px] font-bold uppercase cursor-default">{item}</span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="sm:col-span-2 bg-retro-bg p-4 border-2 border-retro-dark retro-border">
+                                <h4 className="font-retro text-[10px] mb-3 text-avocado uppercase">Tools_Platforms</h4>
+                                <div className="flex flex-wrap gap-1">
+                                    {["Git", "GitHub", "Postman", "Figma"].map(item => (
+                                        <span key={item} className="px-1.5 py-0.5 bg-mustard/20 border border-retro-dark/30 hover:border-avocado transition-colors duration-300 text-[9px] font-bold uppercase cursor-default">{item}</span>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>

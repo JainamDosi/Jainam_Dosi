@@ -31,7 +31,7 @@ const Sidebar = () => {
 
             <div className="w-4 h-px bg-ui-border opacity-50"></div>
 
-            <SidebarItem icon="article" label="View_Resume" href="#" external />
+            <SidebarItem icon="article" label="View_Resume" href="https://drive.google.com/drive/folders/14PiBokSAVfBHBAZyrcUJjDqGozHBlIvs?usp=drive_link" external />
             <SidebarItem icon="code" label="Github_Source" href="https://github.com/JainamDosi" external />
             <SidebarItem icon="groups" label="LinkedIn_Profile" href="https://www.linkedin.com/in/jainam-dosi" external />
 

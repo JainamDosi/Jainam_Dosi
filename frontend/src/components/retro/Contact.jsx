@@ -13,7 +13,7 @@ const Contact = () => {
                     <div className="flex gap-8 font-retro text-xs md:text-sm">
                         <a className="hover:text-mustard" href="https://www.linkedin.com/in/jainam-dosi" target="_blank" rel="noopener noreferrer">LNKDN</a>
                         <a className="hover:text-mustard" href="https://github.com/JainamDosi" target="_blank" rel="noopener noreferrer">GTHB</a>
-                        <a className="hover:text-mustard" href="#">TWTR</a>
+                        <a className="hover:text-mustard" href="https://x.com/CodeJ31969" target="_blank" rel="noopener noreferrer">X / TWTR</a>
                         <a className="hover:text-mustard" href="#">DRBBL</a>
                     </div>
                     <div className="font-retro text-[10px] tracking-widest opacity-60">

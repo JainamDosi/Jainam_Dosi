@@ -41,10 +41,12 @@ const Work = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                 {projects.map((project, idx) => (
                     <div key={project.id} className={`group border-ui-border ${idx !== projects.length - 1 ? 'border-b sm:border-b-0 sm:border-r' : ''} ${idx % 2 === 0 ? 'sm:border-r' : 'sm:border-r-0 lg:border-r'}`}>
-                        <div className="aspect-square relative overflow-hidden bg-instrument-bg border-b border-ui-border">
-                            <img alt={project.title} className="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 group-hover:brightness-100 transition-all duration-300" src={project.image} />
-                            <div className="absolute top-2 left-2 px-1.5 py-0.5 bg-instrument-bg/80 text-[8px] font-bold border border-ui-border uppercase">{project.id}</div>
-                        </div>
+                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="block overflow-hidden">
+                            <div className="aspect-square relative overflow-hidden bg-instrument-bg border-b border-ui-border">
+                                <img alt={project.title} className="w-full h-full object-cover grayscale group-hover:grayscale-0 brightness-75 group-hover:scale-105 group-hover:brightness-100 transition-all duration-500" src={project.image} />
+                                <div className="absolute top-2 left-2 px-1.5 py-0.5 bg-instrument-bg/80 text-[8px] font-bold border border-ui-border uppercase">{project.id}</div>
+                            </div>
+                        </a>
                         <div className="p-4 bg-charcoal/10 h-full flex flex-col">
                             <h3 className="text-[11px] font-bold mb-1 uppercase text-white font-mono">{project.title}</h3>
                             <p className="text-[9px] text-beige-muted uppercase leading-tight font-mono mb-4">{project.description}</p>

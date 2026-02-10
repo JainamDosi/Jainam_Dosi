@@ -12,11 +12,11 @@ const Contact = () => {
                 <div className="flex gap-4 pt-8">
                     <a className="px-4 py-2 border border-ui-border text-[9px] hover:bg-accent-orange hover:text-white hover:border-accent-orange transition-all font-mono uppercase" href="https://github.com/JainamDosi" target="_blank" rel="noopener noreferrer">GITHUB_</a>
                     <a className="px-4 py-2 border border-ui-border text-[9px] hover:bg-accent-orange hover:text-white hover:border-accent-orange transition-all font-mono uppercase" href="https://www.linkedin.com/in/jainam-dosi" target="_blank" rel="noopener noreferrer">LINKEDIN_</a>
-                    <a className="px-4 py-2 border border-ui-border text-[9px] hover:bg-accent-orange hover:text-white hover:border-accent-orange transition-all font-mono uppercase" href="#">TWITTER_</a>
+                    <a className="px-4 py-2 border border-ui-border text-[9px] hover:bg-accent-orange hover:text-white hover:border-accent-orange transition-all font-mono uppercase" href="https://x.com/CodeJ31969" target="_blank" rel="noopener noreferrer">X_TWITTER</a>
                 </div>
                 <div className="w-full flex justify-between items-end pt-12">
                     <div className="text-[8px] text-beige-muted text-left font-mono">
-                        © 2024 / JAINAM DOSI ARCHITECTURE<br />
+                        © 2026 / JAINAM DOSI AI SDE<br />
                         CORE_VERSION: 1.0.42_STABLE
                     </div>
                     <div className="text-right">
