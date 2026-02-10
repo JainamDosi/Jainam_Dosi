@@ -1,15 +1,177 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Space+Grotesk:wght@300;400;700&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
 @import "tailwindcss";
 
-body {
-  font-family: 'IBM Plex Mono', monospace;
+@theme {
+  /* Instrument Theme (Precision Interface) */
+  --color-instrument-bg: #0a0a0a;
+  --color-panel: #1a1a17;
+  --color-charcoal: #242424;
+  --color-beige: #d4d4c8;
+  --color-beige-muted: #8a8a80;
+  --color-accent-orange: #c25d2e;
+  --color-ui-border: #3d3d38;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-data: "JetBrains Mono", monospace;
+
+  /* Retro Theme */
+  --color-avocado: #7b8c5d;
+  --color-mustard: #e1ad01;
+  --color-burnt-orange: #cc5500;
+  --color-clay: #d2b48c;
+  --color-retro-bg: #f4ead5;
+  --color-retro-dark: #2d2d2d;
+  --font-retro: "Bungee", cursive;
+  --font-body: "Space Grotesk", sans-serif;
+  --font-accent: "Syne", sans-serif;
+}
+
+@layer base {
+  body.instrument {
+    @apply bg-instrument-bg text-beige font-mono selection:bg-accent-orange selection:text-white;
+    background-image:
+      radial-gradient(circle at 2px 2px, rgba(212, 212, 200, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    body.instrument {
+      padding: 2rem;
+    }
+  }
+
+  body.retro {
+    @apply bg-retro-bg text-retro-dark font-body;
+    background-image: radial-gradient(#cc550022 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+}
+
+.window-frame {
+  @apply border border-ui-border bg-panel shadow-2xl overflow-y-auto;
+  width: 100%;
+  max-width: 1400px;
+  max-height: 92vh;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .window-frame {
+    margin: 40px auto;
+  }
+}
+
+.data-cell {
+  @apply border-ui-border p-3 flex flex-col;
+}
+
+.metric-label {
+  @apply text-[9px] uppercase tracking-widest text-beige-muted mb-1;
+}
+
+.metric-value {
+  @apply text-xs font-medium uppercase;
+}
+
+.btn-interact {
+  @apply transition-all duration-150 active:scale-95 cursor-pointer;
+}
+
+
+.scanline {
+  width: 100%;
+  height: 2px;
+  background: rgba(204, 255, 0, 0.1);
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  pointer-events: none;
+  animation: scan 8s linear infinite;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%
+  }
+
+  100% {
+    top: 100%
+  }
+}
+
+@keyframes dataPulse {
+
+  0%,
+  100% {
+    height: 30%;
+    opacity: 0.4;
+  }
+
+  50% {
+    height: 80%;
+    opacity: 0.8;
+  }
+}
+
+.animate-data-bar {
+  animation: dataPulse 3s ease-in-out infinite;
+  transform-origin: bottom;
 }
 
 .glass {
-  background: rgba(1, 0, 0, 0);   /* more transparent */
+  background: rgba(1, 0, 0, 0);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
 }
 
+.pixel-mask {
+  image-rendering: pixelated;
+  clip-path: polygon(0% 5%, 5% 5%, 5% 0%, 95% 0%, 95% 5%, 100% 5%, 100% 95%, 95% 95%, 95% 100%, 5% 100%, 5% 95%, 0% 95%);
+}
+
+.retro-border {
+  box-shadow: 8px 8px 0px 0px var(--color-retro-dark);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slowRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-retro-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-retro-spin {
+  animation: slowRotate 20s linear infinite;
+}
