@@ -14,7 +14,7 @@ const projects = [
         title: "QnA Chatbot",
         description: "Retrieval Augmented Generation chatbot with memory and context",
         tag: "NLP_RAG",
-        link: "https://github.com/JainamDosi/QnA-Chatbot",
+        link: "https://github.com/JainamDosi/Langchain_QnA_RAG",
         image: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80&w=800"
     },
     {
