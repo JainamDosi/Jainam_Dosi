@@ -7,6 +7,7 @@ const projects = [
         description: "AI powered IDE built using LangGraph and gemini APIs",
         tag: "AI_IDE",
         link: "https://github.com/JainamDosi/AgentCode",
+        liveLink: "",
         image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -14,7 +15,8 @@ const projects = [
         title: "QnA Chatbot",
         description: "Retrieval Augmented Generation chatbot with memory and context",
         tag: "NLP_RAG",
-        link: "https://github.com/JainamDosi/QnA-Chatbot",
+        link: "https://github.com/JainamDosi/Langchain_QnA_RAG",
+        liveLink: "",
         image: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -23,6 +25,7 @@ const projects = [
         description: "National Finalist among 4k+ candidates. E-commerce optimization.",
         tag: "FINALS",
         link: "https://github.com/JainamDosi/MeeshoDICE_Finals_Prototype",
+        liveLink: "",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -31,6 +34,7 @@ const projects = [
         description: "Mini project with smooth immersive storytelling experience",
         tag: "UI_UX",
         link: "https://github.com/JainamDosi/ImmersiveScroll",
+        liveLink: "https://immersive-scroll.vercel.app/",
         image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -39,6 +43,7 @@ const projects = [
         description: "Cyberpunk & Retro dual-mode high-performance portfolio",
         tag: "DESIGN",
         link: "https://github.com/JainamDosi/Jainam_Dosi",
+        liveLink: "https://jainam-dosi.vercel.app/",
         image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -47,6 +52,7 @@ const projects = [
         description: "Medical report analyzer with OCR and TTS capabilities",
         tag: "HEALTH_AI",
         link: "#",
+        liveLink: "https://exp-med.vercel.app/",
         image: "https://images.unsplash.com/photo-1576091160550-2173dad9998e?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -55,6 +61,7 @@ const projects = [
         description: "Financial tool based on the 50-30-20 budgeting rule",
         tag: "FINANCE",
         link: "#",
+        liveLink: "https://50-30-20tool.vercel.app/",
         image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -63,6 +70,7 @@ const projects = [
         description: "A centralized repository for placement preparation resources",
         tag: "ACADEMIC",
         link: "#",
+        liveLink: "https://placevault.vercel.app/",
         image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -71,6 +79,7 @@ const projects = [
         description: "Doc sharing with RBAC for enterprise internship project",
         tag: "WORK",
         link: "#",
+        liveLink: "https://itzthere.vercel.app/",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
     }
 ];
@@ -103,7 +112,7 @@ const Work = () => {
                                 CHRONICLE_IDX_{(idx + 1).toString().padStart(3, '0')}
                             </div>
 
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                            <a href={project.liveLink || project.link} target="_blank" rel="noopener noreferrer" className="block">
                                 <div className="relative aspect-[16/10] bg-retro-dark border-4 border-retro-dark overflow-hidden retro-border group-hover:-translate-y-2 transition-transform duration-500">
                                     <img
                                         alt={project.title}

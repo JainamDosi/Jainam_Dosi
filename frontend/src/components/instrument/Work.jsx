@@ -6,13 +6,15 @@ const projects = [
         title: "Agent Code",
         description: "AI powered IDE built using LangGraph and gemini APIs",
         link: "https://github.com/JainamDosi/AgentCode",
+        liveLink: "",
         image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800"
     },
     {
         id: "PRJ_QNA_CHAT",
         title: "QnA Chatbot",
         description: "Retrieval Augmented Generation chatbot with memory and context",
-        link: "https://github.com/JainamDosi/QnA-Chatbot",
+        link: "https://github.com/JainamDosi/Langchain_QnA_RAG",
+        liveLink: "",
         image: "https://images.unsplash.com/photo-1531746790731-6c087fecd05a?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -20,6 +22,7 @@ const projects = [
         title: "Meesho Hackathon",
         description: "National Finalist among 4k+ candidates. E-commerce optimization.",
         link: "https://github.com/JainamDosi/MeeshoDICE_Finals_Prototype",
+        liveLink: "",
         image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -27,6 +30,7 @@ const projects = [
         title: "Immersive Scroll",
         description: "Mini project with smooth immersive storytelling experience",
         link: "https://github.com/JainamDosi/ImmersiveScroll",
+        liveLink: "https://immersive-scroll.vercel.app/",
         image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -34,6 +38,7 @@ const projects = [
         title: "Personal Portfolio",
         description: "Cyberpunk & Retro dual-mode high-performance portfolio",
         link: "https://github.com/JainamDosi/Jainam_Dosi",
+        liveLink: "https://jainam-dosi.vercel.app/",
         image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -41,6 +46,7 @@ const projects = [
         title: "ExpMed AI",
         description: "AI tool with OCR/TTS for medical report interpretation",
         link: "https://github.com/JainamDosi/ExpMed",
+        liveLink: "https://exp-med.vercel.app/",
         image: "https://images.unsplash.com/photo-1576091160550-2173dad9998e?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -48,6 +54,7 @@ const projects = [
         title: "50-30-20 Tool",
         description: "Financial budgeting tool enforcing the 50-30-20 rule",
         link: "https://github.com/JainamDosi/50_30_20tool",
+        liveLink: "https://50-30-20tool.vercel.app/",
         image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -55,6 +62,7 @@ const projects = [
         title: "Placevault",
         description: "Placement resource library for sharing and accessing materials",
         link: "https://github.com/JainamDosi/Placevault",
+        liveLink: "https://placevault.vercel.app/",
         image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800"
     },
     {
@@ -62,6 +70,7 @@ const projects = [
         title: "Itzthere",
         description: "Internship Project: Professional doc sharing platform with RBAC",
         link: "https://github.com/JainamDosi/ITZTHERE",
+        liveLink: "https://itzthere.vercel.app/",
         image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800"
     }
 ];
@@ -92,7 +101,7 @@ const Work = () => {
                         </div>
 
                         {/* Image Section */}
-                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="block relative overflow-hidden aspect-video border-b border-ui-border">
+                        <a href={project.liveLink || project.link} target="_blank" rel="noopener noreferrer" className="block relative overflow-hidden aspect-video border-b border-ui-border cursor-pointer">
                             <img
                                 alt={project.title}
                                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 brightness-75 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700"
